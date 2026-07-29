@@ -1,0 +1,77 @@
+Types of Instruction : 
+a) Type Declaration instruction - is used to declare the types of variable used in a C program
+b) Arithmatic Instruction - used to perform arithmatic operation on Constant and variable
+c) Control Instruction - used to control the sequence of execution of various statement in a C program.
+
+
+# TYPE DECLARATION INSTRUCTION : it is written in the begining of the main() function 
+like int Principle;
+float rs;
+char name;
+
+A) we can initialize while declaring like int a = 2, b = 5; // float rate = 1.99*3+2;
+
+B) A variable must defined before using it.
+
+C) int a,b,c,d; a = b = c = d = 10;
+
+# ARITHMATIC INSTRUCTIONS : int beta = 9, delta = 2*4+3 + beta ;
+-> */-+% are arithmatic opeartors.
+= is assignment opeartor.
+constant and variable together called operands
+a) integer mode arithmatic statemnet - in this statemnet all operands are either integer variable or integer constant
+b) Real mode arithmatic statemnt where all operands are real.
+c) Mixed : some are real and some are integers.
+-> variable humesha left side hote haiin or jo values ya contants hote hain wo left side.
+-> % this is modular opeartor that returns the reminder
+-> these operation are perfomred on int float and chars.
+ASCII code of a and b are 01100001 and 01100010 decimal equivalent are 97 and 98 and addition are performed on these values 
+
+-> there is no operator in C to perfrom exponent, for that we use pow () function it only work with real number ....
+like we want to write 3 raise to the power of 2 i.e 3X3 = 9; we write it as float c = pow(3.0,2.0);
+
+-> you must include #include<stdio.h> in the file to use pow.
+
+
+# integer : integer = integer
+# integer : Float = Float
+# Float : Float = Float
+
+# TYPE CONVERSION IN ASSIGNMENT : 
+If the type and value of the RHS and LHS of = are not same like float c = 9  // int k = 3.5; then 
+the expression on RHS will be promoted or demoted depending on the type of vale on LHS.
+like in the example int k = 3.5, hence int is integer so 3.5 is demoted to 3. and same happens with
+float like float c = 9, i,e integer so it becomes 9.0.
+
+-> pehle numbers pr calculation hoti hai and tabhi decide hota hai ki number integer hai ya float 
+agar integers hain dono to answer integer hoga or agar ek bhi real ya dono real hai to answer reaal..
+and uske baad jb store hone 
+jata hai tb wo fir se convert hota hai int ya float k hisab se.
+
+implicit conversion jo khud hoti hai and explicit jo hum kkarte hain like [printf("%d", (int)(9.0/2));]
+
+# HIERARCHY OF OPERATIONS: 
+1) *   Multiply,  /  Divide,  %   Modulus (reminder)
+2) +   Addition
+3) -   Subtraction 
+4) =   Assignment 
+
+# ASSOCIATIVITY OF OPERATORS :
+all operatior in C have either left to right or right to left ASSOCIATIVITY
+if there is a tie between two operators of same priority.
+
+example : 3/2*5 here / and * have same priority sowe see their ASSOCIATIVITY
+they enjoy left to right ASSOCIATIVITY
+so firt we divide then Multiply
+
+example a = b = 3;
+here Assignment opeartor (=) enjoys right to left ASSOCIATIVITY.
+so first 3 goes in b then value of b goes in a.
+
+# CONTROL INSTRUCTIONS:
+ control the order in which instructions are executed in a program 
+4 Types
+a. sequence Control Instruction
+b. Selection or decision control Instruction
+c. Repetition or loop control statement
+d. Case control instruction.
