@@ -1,0 +1,24 @@
+we must able to perform differnt kind of actions based on circumstances, like if its raining i will not go for the match.
+in programing also, we want one set of instructions to be executed in one situation and a different set in another
+
+# THE IF ELSE STATEMENT : 
+if and else are keywords in C used to implement decision control instructions.
+
+EXAMPLE : if(this Condition is true)
+             statemnt 1;
+          else 
+             statemnt 2;
+
+Condition of if is always stored in () parentheses.
+the condition is expressed using relational operators.
+these operators allows us to compare two values.
+like :
+x ==  y (equality operator)
+x != y  (inequality operator)
+x < y
+x > y
+x <= y
+x >= y
+
+-> in C a non Zero value is considered to be true and 0 is considered false.
+ 
